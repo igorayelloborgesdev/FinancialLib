@@ -1,0 +1,24 @@
+{
+  "name": "financiallib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "ztable": "^1.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorayelloborgesdev/FinancialLib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorayelloborgesdev/FinancialLib/issues"
+  },
+  "homepage": "https://github.com/igorayelloborgesdev/FinancialLib#readme"
+}
