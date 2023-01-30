@@ -4,6 +4,7 @@ const CurrentLiquidity = require('./Domains/CurrentLiquidity/CurrentLiquidity');
 const Debt = require('./Domains/Debt/Debt');
 const GrossIncome = require('./Domains/GrossIncome/GrossIncome');
 const CashFlow = require('./Domains/CashFlow/CashFlow');
+const Capitalization = require('./Domains/Capitalization/Capitalization');
 
 module.exports = {
     Depreciation,
@@ -11,7 +12,8 @@ module.exports = {
     CurrentLiquidity,
     Debt,
     GrossIncome,
-    CashFlow
+    CashFlow,
+    Capitalization
  }
 
 
