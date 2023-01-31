@@ -1,4 +1,4 @@
-module.exports = class Depreciation
+module.exports = class Validation
 {    
     static NotAllowZero(value)
     {
