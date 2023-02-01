@@ -6,6 +6,8 @@ const GrossIncome = require('./Domains/GrossIncome/GrossIncome');
 const CashFlow = require('./Domains/CashFlow/CashFlow');
 const Capitalization = require('./Domains/Capitalization/Capitalization');
 const RateOfReturn = require('./Domains/RateOfReturn/RateOfReturn');
+const Stocks = require('./Domains/Stocks/Stocks');
+const Currency = require('./Domains/Currency/Currency');
 
 module.exports = {
     Depreciation,
@@ -15,13 +17,10 @@ module.exports = {
     GrossIncome,
     CashFlow,
     Capitalization,
-    RateOfReturn
+    RateOfReturn,
+    Stocks,
+    Currency
  }
-
-
-// const nerdamer = require("./nerdamer/all");
-// var result = nerdamer.solve('-250000+(50000/(1+x)^1)+(80000/(1+x)^2)+(90000/(1+x)^3)+(120000/(1+x)^4)', 'x');
-// console.log(result.text())
 
 // var ztable = require('ztable');
 // var media = 174;
