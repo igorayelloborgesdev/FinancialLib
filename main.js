@@ -8,6 +8,7 @@ const Capitalization = require('./Domains/Capitalization/Capitalization');
 const RateOfReturn = require('./Domains/RateOfReturn/RateOfReturn');
 const Stocks = require('./Domains/Stocks/Stocks');
 const Currency = require('./Domains/Currency/Currency');
+const Statistics = require('./Domains/Statistics/Statistics');
 
 module.exports = {
     Depreciation,
@@ -19,13 +20,6 @@ module.exports = {
     Capitalization,
     RateOfReturn,
     Stocks,
-    Currency
+    Currency,
+    Statistics
  }
-
-// var ztable = require('ztable');
-// var media = 174;
-// var desvioPadrao = 8;
-// var probabilidade = 180;
-
-// var z = (probabilidade - media) / desvioPadrao
-// console.log(ztable(z));
