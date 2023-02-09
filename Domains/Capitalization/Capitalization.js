@@ -30,6 +30,10 @@ module.exports = class Capitalization
     static SimpleInterestPeriod(yearInterest, period)
     {             
         return (((yearInterest / 100.0) * period) * 100.0).toFixed(2);
+    }
+    static CapitalizationSimpleFutureValue(futureValue, interest, period)
+    {     
+        return (futureValue / (1 + (interest / 100.0) * period)).toFixed(2);
     }    
     static CapitalizationCompound(currentValue, interest, period)
     {             
@@ -64,14 +68,27 @@ module.exports = class Capitalization
     {
         Validation.NotAllowZero(currentValue);
         return (((futureValue / currentValue) - 1) * 100.0).toFixed(2);        
-    }
+    }    
     static RealIncome(interest, inflation)
     {
         Validation.NumberNotAllow(-1.0, -1.0 * (inflation / 100.0));
         return ((((1.0 + (interest / 100.0))/(1.0 + (inflation/ 100.0))) - 1.0) * 100.0).toFixed(2);
     }
+    static NominalInterestRate(realInterest, inflation)
+    {        
+        return ( (((1.0 + (realInterest / 100.0)) * (1.0 + (inflation / 100.0))) - 1.0) * 100.0).toFixed(2);        
+    }
     static RealInterestRate(interest, period)
     {
         return ((Math.pow((1 + (interest / 100.0)), period) - 1) * 100.0).toFixed(2);
+    }
+    static RealInterestRateByCurrentValueFutureValueAndPeriod(currentValue, futureValue, period)
+    {
+        Validation.NotAllowZero(period);
+        return ((((futureValue / currentValue) - 1.0) / period) * 100.0 ).toFixed(2);
+    }
+    static NominalInterestRateWithCurrentValue(currentValue, realInterest, inflation)
+    {        
+        return (currentValue * (1.0 + (((1.0 + (realInterest / 100.0)) * (1.0 + (inflation / 100.0))) - 1.0)) ).toFixed(2);        
     }
 }
