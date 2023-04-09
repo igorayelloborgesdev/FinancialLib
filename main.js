@@ -9,6 +9,7 @@ const RateOfReturn = require('./Domains/RateOfReturn/RateOfReturn');
 const Stocks = require('./Domains/Stocks/Stocks');
 const Currency = require('./Domains/Currency/Currency');
 const Statistics = require('./Domains/Statistics/Statistics');
+const Derivatives = require('./Domains/Derivatives/Derivatives');
 
 module.exports = {
     Depreciation,
@@ -21,5 +22,6 @@ module.exports = {
     RateOfReturn,
     Stocks,
     Currency,
-    Statistics
+    Statistics,
+    Derivatives
  }

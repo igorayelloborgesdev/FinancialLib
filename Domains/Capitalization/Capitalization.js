@@ -41,7 +41,7 @@ module.exports = class Capitalization
     }
     static CapitalizationCompoundInterestPeriod(interest, period)
     {             
-        return ((Math.pow((1 + (interest / 100.0)), period) - 1.0) * 100.00).toFixed(2);
+        return ((Math.pow((1 + (interest / 100.0)), period) - 1.0) * 100.00);
     }
     static CapitalizationCompoundGetCurrentValue(futureValue, interest, period)
     {             
