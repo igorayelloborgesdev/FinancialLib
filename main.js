@@ -14,6 +14,7 @@ const Derivatives = require('./Domains/Derivatives/Derivatives');
 const PerformanceMeasure = require('./Domains/PerformanceMeasure/PerformanceMeasure');
 const BusinessValuation = require('./Domains/BusinessValuation/BusinessValuation');
 const Bounds = require('./Domains/Bounds/Bounds');
+const Risk = require('./Domains/Risk/Risk');
 //Classes
 const BusinessValuationClass = require('./Classes/BusinessValuationClass');
 const CashFlowAnalysisClass = require('./Classes/CashFlowAnalysisClass');
@@ -39,6 +40,7 @@ module.exports = {
     PerformanceMeasure,
     BusinessValuation,
     Bounds,
+    Risk,
     //Classes
     BusinessValuationClass,
     CashFlowAnalysisClass,
